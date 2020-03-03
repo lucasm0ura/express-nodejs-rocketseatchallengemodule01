@@ -17,7 +17,7 @@ const express = require("express");
 const server = express();
 
 server.get("/url", (req, res) => { // req = request, res = response
-  return res.json(array); // return array with results 
+  return res.json(array); // return array with results
 });
 
 server.post("/url", (req, res) => {
@@ -28,13 +28,15 @@ server.put("/url/:param", (req, res) => {
   return res.status(200).json({success: 'Edit success'});
 });
 
-server.delete("/url/:param", (req, res) => { 
+server.delete("/url/:param", (req, res) => {
   return res.status(200).json({success: 'Delete success'});
 });
 ```
 
 ## Contributing
+
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 ## License
-[MIT](https://github.com/lucasm0ura/express-nodejs-rocketseatchallengemodule01/LICENSE)
+
+[MIT](https://github.com/lucasm0ura/express-nodejs-rocketseatchallengemodule01/blob/master/LICENSE)
